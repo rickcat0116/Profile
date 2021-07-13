@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Author" content="">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="user-scalable=yes, maximum-scale=1.0, minimum-scale=0.25, width=1200">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <title>Seongjin Profile</title>
+
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/common.css">
+
+    <script src="./js/libs/jquery-3.5.1.min.js"></script>
+    <script src="./js/libs/gsap.min.js"></script>
+    <script src="./js/libs/ScrollTrigger.min.js"></script>
+    <script src="./js/libs/SplitText.min.js"></script>
+    <!-- <script src="./js/profile.js"></script> -->
+
+</head>
+<body>
+    <section class="section section-intro">
+        <img class="hero_image" src="./img/me.jpg" alt="" />
+    
+        <svg class="cross-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="12" y1="5" x2="12" y2="19"></line>
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+        </svg>
+    
+        <svg class="cross-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="12" y1="5" x2="12" y2="19"></line>
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+        </svg>
+    
+        <div class="ring ring-left"></div>
+        <div class="ring ring-right"></div>
+    
+        <h3 class="hero_title hero_title1">HI, I'M SeongJin.Oh</h3>
+        <h3 class="hero_title hero_title2">WEB PUBLISHER</h3>
+    
+        <p class="hero_text"><span>Thank you for Watching My Profile</span></p>
+      </section>
+    
+      <section class="section section-text">
+        <div class="box">
+          <h2>Career</h2>
+          <p>2017.10 ~ 2018.10 디자인 프리랜서<br>2021.01 ~ 2021.03 맨파워코리아 IS팀(IT Service Team & 유지보수)<br>2021.03.14 ~ 프로젝트독 개발팀 사원(퍼블리셔)</p>
+          <div class="line"></div>
+        </div>
+
+        <div class="box box2 clfix">
+            <h2>Skill</h2>
+            <div class="right-text">
+                <h3>
+                    PhotoShop<br>
+                    HTML<br>
+                    CSS<br>
+                    JS/JQuery<br>
+                </h3>
+            </div>
+            <div class="right-skill">
+                <span><i class="skill skill1"></i></span>
+                <span><i class="skill skill2"></i></span>
+                <span><i class="skill skill3"></i></span>
+                <span><i class="skill skill4"></i></span>
+            </div>
+            <div class="line"></div>
+          </div>
+      </section>
+    
+      <section class="section section-works">
+        <div class="cards">
+          <a href="./lib/razer/index.html" class="card card-1" data-cursor="hover"></a>
+          <a href="./lib/change/index.html" class="card card-2" data-cursor="hover"></a>
+          <a href="./lib/logitech/index.html" class="card card-3" data-cursor="hover"></a>
+          <a href="./lib/nike/index.html" class="card card-4" data-cursor="hover"></a>
+          <a href="./lib/creamy/index.html" class="card card-5" data-cursor="hover"></a>
+        </div>
+    
+        <svg class="cross-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="12" y1="5" x2="12" y2="19"></line>
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+        </svg>
+      </section>
+    
+      <section class="section section-footer">
+        <div class="big">RICKCATS</div>
+    
+        <div class="footer_link">
+          <img src="./img/team.png" alt="">
+        </div>
+    
+        <p class="footer">
+          누구보다 팀에 도움이 될 수 있는 인재가 되기위해서 노력중입니다.<br>당장은 서투를지 몰라도, 팀에 녹아들어 발전하는 모습 보여드릴 것을 약속드립니다.
+        </p>
+    
+        <a href="https://github.com/rickcat0116/" class="footer_button" data-cursor="hover" target="_blank" rel="noopener noreferer">Welcome to My Github</a>
+      </section>
+    
+      <div class="cursor"></div>
+
+      <script>
+          gsap.from(".hero_image", {
+    scale: 8,
+    transformOrigin: "center center",
+    ease: "expo",
+    scrollTrigger: {
+      trigger: ".hero_image",
+      start: "center center",
+      end: "center top",
+      pin: true,
+      scrub: 0.5
+    }
+  });
+  
+  gsap.to(".ring-right", {
+    scale: 5,
+    ease: "power4",
+    transformOrigin: "center",
+    scrollTrigger: {
+      trigger: ".ring-right",
+      start: "top center",
+      end: "bottom+=300 200px",
+      pin: true,
+      scrub: 0.25
+    }
+  });
+  
+  gsap.to(".ring-left", {
+    scale: 3,
+    ease: "power4",
+    transformOrigin: "center center",
+    scrollTrigger: {
+      trigger: ".ring-left",
+      start: "center+=100% center",
+      end: "bottom+=300 top",
+      pin: true,
+      scrub: 0.25
+    }
+  });
+  
+  gsap.to(".hero_title1", {
+    xPercent: -50,
+    scrollTrigger: {
+      trigger: ".hero_title1",
+      start: "center center",
+      pin: true,
+      scrub: 0.5
+    }
+  });
+  
+  gsap.to(".hero_title2", {
+    xPercent: 50,
+    scrollTrigger: {
+      trigger: ".hero_title2",
+      start: "center center",
+      pin: true,
+      scrub: 0.5
+    }
+  });
+  
+  gsap.to(".hero_text", {
+    opacity: 0,
+    scrollTrigger: {
+      trigger: ".hero_text",
+      start: "top 60%",
+      end: "+=60 60%",
+      pin: false,
+      scrub: 0.5
+    }
+  });
+  
+  gsap.to(".cross-1", {
+    rotate: "+=360",
+    scrollTrigger: {
+      trigger: ".cross-1",
+      start: "bottom bottom",
+      end: "bottom top",
+      pin: false,
+      scrub: 0.5
+    }
+  });
+  
+  gsap.to(".cross-2", {
+    rotate: 360 * 4,
+    scrollTrigger: {
+      trigger: ".cross-2",
+      start: "bottom bottom",
+      end: "bottom top",
+      pin: false,
+      scrub: 0.5
+    }
+  });
+  
+  gsap.to(".box", {
+    y: 500,
+    x: "-10vw",
+    ease: "power.in",
+    scrollTrigger: {
+      trigger: ".box",
+      start: "top bottom",
+      end: "bottom top",
+      scrub: true
+    }
+  });
+
+  gsap.to(".skill1", {
+    width:"70%",
+    scrollTrigger: {
+      trigger: ".box h2",
+      start: "top bottom",
+      end: "bottom top",
+      scrub: true
+    }
+  });
+
+  gsap.to(".skill2", {
+    width:"85%",
+    scrollTrigger: {
+      trigger: ".box h2",
+      start: "top bottom",
+      end: "bottom top",
+      scrub: true
+    }
+  });
+
+  gsap.to(".skill3", {
+    width:"80%",
+    scrollTrigger: {
+      trigger: ".box h2",
+      start: "top bottom",
+      end: "bottom top",
+      scrub: true
+    }
+  });
+
+  gsap.to(".skill4", {
+    width:"85%",
+    scrollTrigger: {
+      trigger: ".box h2",
+      start: "top bottom",
+      end: "bottom top",
+      scrub: true
+    }
+  });
+  
+  gsap.from(".line", {
+    scaleX: 0,
+    transformOrigin: "left center",
+    ease: "power.in",
+    scrollTrigger: {
+      trigger: ".line",
+      start: "center 75%",
+      end: "bottom 10%",
+      scrub: 0.5,
+      pin: false
+    }
+  });
+  
+  gsap.to(".big", {
+    x: "-130vw",
+    transformOrigin: "center center",
+    scrollTrigger: {
+      trigger: ".big",
+      start: "top 62%",
+      end: "bottom top-=200",
+      pin: true,
+      scrub: 1.75
+    }
+  });
+  
+  gsap.to(".cards", {
+    scale: 1.75,
+    scrollTrigger: {
+      trigger: ".cards",
+      start: "center center",
+      end: "bottom top",
+      pin: true,
+      scrub: true
+    }
+  });
+  
+  gsap.to(".card-1", {
+    rotate: -20,
+    scale: 0.75,
+    x: -200,
+    transformOrigin: "bottom center",
+    scrollTrigger: {
+      trigger: ".cards",
+      start: "center center",
+      end: "bottom top",
+      pin: true,
+      scrub: true
+    }
+  });
+  
+  gsap.to(".card-3", {
+    rotate: 20,
+    scale: 0.75,
+    x: 200,
+    transformOrigin: "bottom center",
+    scrollTrigger: {
+      trigger: ".cards",
+      start: "center center",
+      end: "bottom top",
+      pin: true,
+      scrub: true
+    }
+  });
+
+  gsap.to(".card-4", {
+    rotate: -30,
+    scale: 0.5,
+    x: -350,
+    transformOrigin: "bottom center",
+    scrollTrigger: {
+      trigger: ".cards",
+      start: "center center",
+      end: "bottom top",
+      pin: true,
+      scrub: true
+    }
+  });
+  
+  gsap.to(".card-5", {
+    rotate: 30,
+    scale: 0.5,
+    x: 350,
+    transformOrigin: "bottom center",
+    scrollTrigger: {
+      trigger: ".cards",
+      start: "center center",
+      end: "bottom top",
+      pin: true,
+      scrub: true
+    }
+  });
+  
+  gsap.from(".hero_text span", {
+    opacity: 0,
+    duration: 1,
+    y: 40,
+    delay: 0.5,
+    ease: "power2.inOut"
+  });
+  
+  let titleOne = new SplitText(".hero_title1", { type: "words" });
+  let oneWords = titleOne.words;
+  
+  gsap.from(oneWords, {
+    opacity: 0,
+    duration: 1.5,
+    y: 80,
+    ease: "power4",
+    stagger: {
+      each: 0.15
+    }
+  });
+  
+  let titleTwo = new SplitText(".hero_title2", { type: "words" });
+  let twoWords = titleTwo.words;
+  
+  gsap.from(twoWords, {
+    opacity: 0,
+    duration: 1.5,
+    y: 80,
+  
+    delay: 0.25,
+    ease: "power4",
+    stagger: {
+      each: 0.15
+    }
+  });
+  
+  gsap.to(".cross-3", {
+    rotate: 360 * 2,
+    y: 150,
+    scrollTrigger: {
+      scrub: 0.5,
+      start: "bottom bottom",
+      end: "bottom -300px",
+      trigger: ".cross-3",
+      pin: false
+    }
+  });
+  
+  let tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".footer_link img",
+      start: "top 75%"
+    }
+  });
+  
+  tl.from(".footer_link img", {
+    opacity: 0,
+    y: 90,
+    duration: 2,
+    ease: "expo.out"
+  })
+    .from(
+      ".footery",
+      {
+        opacity: 0,
+        y: 90,
+        duration: 2,
+        ease: "expo.out"
+      },
+      "-=1.75"
+    )
+    .from(
+      ".footer_button",
+      {
+        opacity: 0,
+        y: 90,
+        duration: 2,
+        ease: "power3.out"
+      },
+      "-=1.75"
+    );
+  
+  // ScrollTrigger.addEventListener("scrollEnd", () => {
+  //   document.querySelector('.cross-1').classList.add('scroll-end')
+  // });
+  
+  // ScrollTrigger.addEventListener("scrollStart", () => {
+  //   document.querySelector('.cross-1').classList.remove('scroll-end')
+  // });
+  
+  gsap.fromTo(
+    ".hero_image",
+    {
+      opacity: 0,
+      objectPosition: "center 0%",
+      y: 100
+    },
+    {
+      opacity: 1,
+      duration: 2,
+      objectPosition: "center 15%",
+      y: 0,
+      ease: "expo.inOut"
+    }
+  );
+  
+  gsap.set(".cursor", { force3D: true });
+  document.addEventListener("mousemove", (e) => {
+    let x = e.clientX;
+    let y = e.clientY;
+  
+    gsap.to(".cursor", {
+      x: x - 16,
+      y: y - 16,
+      ease: "power3"
+    });
+  });
+  
+  document.body.addEventListener("mouseleave", () => {
+    gsap.to(".cursor", {
+      scale: 0,
+      duration: 0.1,
+      ease: "none"
+    });
+  });
+  
+  document.body.addEventListener("mouseenter", () => {
+    gsap.to(".cursor", {
+      scale: 1,
+      duration: 0.1,
+      ease: "none"
+    });
+  });
+  
+  let hoverCursors = document.querySelectorAll('[data-cursor="hover"]');
+  
+  hoverCursors.forEach(function (cursor) {
+    cursor.addEventListener("mouseenter", () => {
+      gsap.to(".cursor", {
+        scale: 2.5
+      });
+    });
+  
+    cursor.addEventListener("mouseleave", () => {
+      gsap.to(".cursor", {
+        scale: 1
+      });
+    });
+  });
+  
+      </script>
+</body>
+</html>
