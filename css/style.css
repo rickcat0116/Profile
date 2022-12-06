@@ -6,13 +6,16 @@
     --black: #1a1a1a;
   }
   
+  .section-works {z-index:3;}
+  .section-footer {z-index:2;}
+
   body {
     background-color: var(--black);
     background: linear-gradient(90deg, var(--black) 20px, transparent 1%) 50%, linear-gradient(var(--black) 20px, transparent 1%) 50%, #222;
     background-size: 22px 22px;
     background-attachment: fixed;
     color: #fff;
-    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-family: 'SUIT';
     overflow-x: hidden;
   }
   
@@ -43,7 +46,7 @@
     margin: 0;
     font-size: 1.85vw;
     font-weight: 700;
-    font-family:'Noto Sans KR'
+    font-family:'SUIT';
     opacity: 0.75;
     overflow: hidden;
   }
@@ -125,19 +128,24 @@
   
   .box {
     width: 780px;
-    height: 300px;
     mix-blend-mode: difference;
     font-size: 24px;
     font-weight: 300;
     text-align: left;
     line-height: 1.5;
-    font-family:"Noto Sans KR";
-    font-weight:700;
+    font-family:"SUIT";
+  }
+
+  .box .work-list {
+    padding-left:20px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height:30px;
   }
 
   .box .line {
     position: absolute;
-    bottom: 50px;
+    bottom: -10px;
     left: 0;
     width: 40%;
     height: 3px;
@@ -191,6 +199,7 @@
 
 
   .cards {
+    opacity:0;
     width: 350px;
     height: 350px;
     position: relative;
@@ -212,7 +221,7 @@
   
   .card-1 {
     background-color: var(--yellow);
-    background-image: url("../img/razer.png");
+    background-image: url("../img/hyundai.png");
   }
   .card-2 {
     background-color: var(--blue);
@@ -221,13 +230,13 @@
   
   .card-3 {
     background-color: var(--skyblue);
-    background-image: url("../img/logitech.png");
+    background-image: url("../img/cj.png");
   }
 
   .card-4 {
       z-index:-1;
     background-color: var(--gold);
-    background-image: url("../img/nike.png");
+    background-image: url("../img/razer.png");
   }
 
   .card-5 {
@@ -268,7 +277,7 @@
     width: 140px;
     height: 140px;
     position: absolute;
-    left: 20vw;
+    left: 7vw;
     top: 10vw;
     mix-blend-mode: difference;
   }
@@ -279,7 +288,7 @@
     border-radius: 999px;
     background-color: white;
     color: var(--black);
-    font-family: inherit;
+    font-family: 'SUIT';
     border: 0;
     padding: 1em 3em;
     text-align: center;
